@@ -11,8 +11,6 @@ run:
 	docker run -d \
 		--name $(CONTAINER) \
 		-p $(PORT):3128 \
-		-e PROXY_USER=$(USER) \
-		-e PROXY_PASSWORD=$(PASSWORD) \
 		0x06065a/squid
 
 sh:
